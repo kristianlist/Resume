@@ -46,7 +46,7 @@
         <Heading tag="h4" class="">
           <Span gradient>Full Stack Udvikler</Span></Heading
         >
-        <p>ssddff dfd fs fsdf</p>
+        <p>Kort intro her</p>
       </div>
       <!-- nav -->
       <div class="flex flex-col gap-2">
