@@ -1,9 +1,9 @@
 <script lang="ts">
   import { Blockquote } from 'flowbite-svelte';
-  import TimelineGroup from '../components/timeline-group.svelte';
-  import Timeline from '../components/timeline.svelte';
+  import TimelineGroup from '../components/timeline/timeline-group.svelte';
+  import Timeline from '../components/timeline/timeline.svelte';
   import { t } from 'svelte-i18n';
-  import TimelineItem from '../components/timeline-item.svelte';
+  import TimelineItem from '../components/timeline/timeline-item.svelte';
 
   const title = 'ASOM-Net';
 </script>

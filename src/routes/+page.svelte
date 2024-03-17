@@ -66,20 +66,20 @@
     <div class="flex flex-col lg:w-1/2 lg:py-24">
       <!-- about -->
       <div id="about" class="mb-24">
-        <P weight="normal" class="mb-2 mt-8  text-secondary-900 dark:text-secondary-50">
+        <P weight="normal" class="mb-2 mt-8">
           Jeg er en erfaren softwareudvikler der er kendt for en holistisk tilgang til udvikling og
           min interesse i at tilegne mig ny viden.
         </P>
-        <P weight="normal" class="mb-2  text-secondary-900 dark:text-secondary-50">
+        <P weight="normal" class="mb-2">
           Med nysgerrighed og en reflekterende tankegang nyder jeg at udforske nye teknologier og
           metoder for at udvide mit kendskab til software udvikling der er i konstant udvikling.
         </P>
-        <P weight="normal" class="mb-2  text-secondary-900 dark:text-secondary-50">
+        <P weight="normal" class="mb-2">
           Min erfaring som full stack udvikler gør det muligt for mig at betragte systemer fra alle
           perspektiver, mens min erfaring inden for webinfrastruktur sikrer robuste og skalerbare
           løsninger.
         </P>
-        <P weight="normal" class="mb-2  text-secondary-900 dark:text-secondary-50">
+        <P weight="normal" class="mb-2">
           Jeg er stolt af min evne til at tackle komplekse problemer med en rolig og fokuseret
           tilgang, og jeg stræber altid efter at levere resultater af høj kvalitet, der opfylder
           både tekniske og forretningsmæssige krav.

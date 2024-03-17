@@ -1,7 +1,7 @@
 <script lang="ts">
   import { Blockquote, TimelineItem } from 'flowbite-svelte';
-  import TimelineGroup from '../components/timeline-group.svelte';
-  import Timeline from '../components/timeline.svelte';
+  import TimelineGroup from '../components/timeline/timeline-group.svelte';
+  import Timeline from '../components/timeline/timeline.svelte';
   import { t } from 'svelte-i18n';
 
   const title = 'Uddannelse';
