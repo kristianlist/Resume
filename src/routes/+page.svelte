@@ -1,17 +1,22 @@
 <script lang="ts">
-  import { Group, Heading, P, Span, Timeline, TimelineItem, Blockquote, Hr } from 'flowbite-svelte';
-  import { GithubSolid, LinkedinSolid, FacebookSolid, DiscordSolid } from 'flowbite-svelte-icons';
+  import { Heading, P, Span } from 'flowbite-svelte';
+  import {
+    GithubSolid,
+    LinkedinSolid,
+    FacebookSolid,
+    DiscordSolid,
+    EnvelopeOutline,
+    EnvelopeOpenSolid,
+    EnvelopeSolid,
+    PhoneSolid
+  } from 'flowbite-svelte-icons';
 
   import { t } from 'svelte-i18n';
   import Golfbox from '../experience/golfbox.svelte';
   import AsomNet from '../experience/asom-net.svelte';
   import Edducation from '../experience/edducation.svelte';
 
-  const timelineStyle = 'border-dashed';
-  const groupDivStyle = 'border-none bg-transparent dark:bg-transparent p-0';
-  const groupOlStyle = 'divide-y-0';
-
-  const social = [
+  const external = [
     {
       name: 'github',
       url: 'https://github.com/kristianlist',
@@ -23,14 +28,19 @@
       icon: LinkedinSolid
     },
     {
-      name: 'facebook',
-      url: 'https://facebook.com/kristianlist',
-      icon: FacebookSolid
+      name: 'discord',
+      url: 'https://discordapp.com/users/list5138',
+      icon: DiscordSolid
     },
     {
-      name: 'discord',
-      url: 'https://discord.com/kristianlist',
-      icon: DiscordSolid
+      name: 'email',
+      url: 'mailto:kristianl90@gmail.com',
+      icon: EnvelopeSolid
+    },
+    {
+      name: 'phone',
+      url: 'tel:+45 3150 1726',
+      icon: PhoneSolid
     }
   ];
 </script>
@@ -41,15 +51,22 @@
   <div class="justify-between gap-4 lg:flex">
     <div class="flex flex-col justify-between lg:sticky lg:top-0 lg:h-screen lg:w-1/2 lg:py-24">
       <!-- intro -->
-      <div>
-        <Heading tag="h1" class="leading-relaxed">Kristian List</Heading>
-        <Heading tag="h4" class="">
+      <div class="flex flex-col items-center">
+        <!-- image -->
+        <img
+          src="https://media.licdn.com/dms/image/C4D03AQFsL6gP_TsCoQ/profile-displayphoto-shrink_800_800/0/1640008466235?e=1716422400&v=beta&t=Q8DEY1oQ9g1vf9ZJKa1vk6NTc_CCPHmVSwAcMEYemYo"
+          alt="profile"
+          class="-z-10 h-40 w-40 justify-self-center rounded-full object-cover lg:h-60 lg:w-60"
+        />
+
+        <Heading tag="h1" class="w-auto leading-loose">Kristian List</Heading>
+        <Heading tag="h4" class="w-auto leading-3">
           <Span gradient>Full Stack Udvikler</Span></Heading
         >
-        <p>Kort intro her</p>
+        <!-- <P weight="light">Kort intro her</P> -->
       </div>
       <!-- nav -->
-      <div class="flex flex-col gap-2">
+      <div class="hidden flex-col items-center gap-2 lg:flex">
         <a href="#about" class="line-height-3 hover:text-xl active:text-xl">about</a>
         <a href="#experience">experience</a>
         <a href="#education">education</a>
@@ -57,9 +74,11 @@
       </div>
 
       <!-- social -->
-      <div class="flex flex-row gap-2 py-6">
-        {#each social as social}
-          <a href={social.url}><svelte:component this={social.icon} class="lg:h-8 lg:w-8" /></a>
+      <div class="flex flex-row justify-center gap-2 py-6">
+        {#each external as ex}
+          <a href={ex.url}
+            ><svelte:component this={ex.icon} class="lg:h-8 lg:w-8" alt={ex.name} /></a
+          >
         {/each}
       </div>
     </div>
@@ -96,9 +115,16 @@
       <div id="experience">
         <Edducation />
       </div>
-
-      <!-- contact -->
-      <div id="contact"></div>
     </div>
   </div>
 </div>
+
+<style>
+  img {
+    --shadowLength: 1rem;
+    --shadowLengthMinus: calc(-1 * var(--shadowLength));
+    box-shadow: 0 0 calc(var(--shadowLength) * 2) silver;
+    filter: drop-shadow(var(--shadowLengthMinus) 0 0.5em hsla(180, 100%, 50%, 0.4))
+      drop-shadow(var(--shadowLength) 0 0.5em hsla(60, 100%, 50%, 0.4));
+  }
+</style>
