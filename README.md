@@ -1,16 +1,16 @@
 ## Remaining tasks
 
-- Describe educations
-- Make light theme pretty
-- Menu in desktop needs some styling
-- More highlighting in text
-- Add language picker
-- Wrap all text in translation
-- Translate everything into english, maybe more languages
+- [x] Add language picker
+- [ ] Wrap all text in translation
+- [ ] Translate everything into english, maybe more languages
+- [ ] Menu in desktop needs some styling
+- [ ] Describe educations
+- [ ] Make light theme pretty
+- [ ] More highlighting in text
 
 ## Developing
 
-Once you've created a project and installed dependencies with `npm install` (or `pnpm install` or `yarn`), start a development server:
+Install dependencies with `npm install` (or `pnpm install` or `yarn`), start a development server:
 
 ```bash
 npm run dev
