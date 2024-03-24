@@ -3,13 +3,21 @@
   import type { ComponentProps } from 'svelte';
   import Tag from '../tag.svelte';
   import { CalendarWeekSolid } from 'flowbite-svelte-icons';
+  import { t, date } from 'svelte-i18n';
 
   type props = ComponentProps<TimelineItem> & {
     skills: string[];
+    from: Date;
+    to: Date | null;
   };
+
+  let _date =
+    $date($$props.from, { month: 'short', year: 'numeric' }) +
+    ' - ' +
+    ($$props.to ? $date($$props.to, { month: 'short', year: 'numeric' }) : $t('now'));
 </script>
 
-<TimelineItem classDiv="ring-0" {...$$restProps}>
+<TimelineItem classDiv="ring-0" {...$$restProps} classTime="capitalize" date={_date}>
   <svelte:fragment slot="icon">
     <span
       class="absolute -start-3 flex h-6 w-6 items-center justify-center rounded-full bg-primary-200 ring-white dark:bg-primary-900"

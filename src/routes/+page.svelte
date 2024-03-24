@@ -3,10 +3,7 @@
   import {
     GithubSolid,
     LinkedinSolid,
-    FacebookSolid,
     DiscordSolid,
-    EnvelopeOutline,
-    EnvelopeOpenSolid,
     EnvelopeSolid,
     PhoneSolid
   } from 'flowbite-svelte-icons';
@@ -61,16 +58,14 @@
 
         <Heading tag="h1" class="w-auto leading-loose">Kristian List</Heading>
         <Heading tag="h4" class="w-auto leading-3">
-          <Span gradient>Full Stack Udvikler</Span></Heading
+          <Span gradient>{$t('full-stack-developer')}</Span></Heading
         >
-        <!-- <P weight="light">Kort intro her</P> -->
       </div>
       <!-- nav -->
       <div class="hidden flex-col items-center gap-2 lg:flex">
-        <a href="#about" class="line-height-3 hover:text-xl active:text-xl">about</a>
-        <a href="#experience">experience</a>
-        <a href="#education">education</a>
-        <a href="#contact">contact</a>
+        <a href="#about" class="line-height-3 hover:text-xl active:text-xl">{$t('about')}</a>
+        <a href="#experience">{$t('experience')}</a>
+        <a href="#education">{$t('education')}</a>
       </div>
 
       <!-- social -->
@@ -86,22 +81,16 @@
       <!-- about -->
       <div id="about" class="mb-24">
         <P weight="normal" class="mb-2 mt-8">
-          Jeg er en erfaren softwareudvikler der er kendt for en holistisk tilgang til udvikling og
-          min interesse i at tilegne mig ny viden.
+          {$t('about-me.part1')}
         </P>
         <P weight="normal" class="mb-2">
-          Med nysgerrighed og en reflekterende tankegang nyder jeg at udforske nye teknologier og
-          metoder for at udvide mit kendskab til software udvikling der er i konstant udvikling.
+          {$t('about-me.part2')}
         </P>
         <P weight="normal" class="mb-2">
-          Min erfaring som full stack udvikler gør det muligt for mig at betragte systemer fra alle
-          perspektiver, mens min erfaring inden for webinfrastruktur sikrer robuste og skalerbare
-          løsninger.
+          {$t('about-me.part3')}
         </P>
         <P weight="normal" class="mb-2">
-          Jeg er stolt af min evne til at tackle komplekse problemer med en rolig og fokuseret
-          tilgang, og jeg stræber altid efter at levere resultater af høj kvalitet, der opfylder
-          både tekniske og forretningsmæssige krav.
+          {$t('about-me.part4')}
         </P>
       </div>
 
@@ -112,7 +101,7 @@
       </div>
 
       <!-- education -->
-      <div id="experience">
+      <div id="education">
         <Edducation />
       </div>
     </div>

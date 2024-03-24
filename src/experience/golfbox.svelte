@@ -22,7 +22,8 @@
   <Timeline>
     <TimelineItem
       title="Head of Project Management"
-      date="August 2021 - nu"
+      from={new Date(2021, 7)}
+      to={null}
       skills={['C#', 'SQL', 'Excel', 'Git', 'Jira', 'Node.js', 'SvelteKit', 'Tailwind']}
     >
       <P color="text-gray-700 dark:text-gray-300 mb-2">
@@ -58,7 +59,8 @@
 
     <TimelineItem
       title="Technical Product Manager - ProPlanner"
-      date="December 2019 - August 2021"
+      from={new Date(2019, 11)}
+      to={new Date(2021, 7)}
       skills={['C#', 'ASP.NET', 'JavaScript', 'HTML', 'CSS', 'SQL', 'Redmine']}
     >
       <P color="text-gray-700 dark:text-gray-300">
@@ -73,7 +75,8 @@
 
     <TimelineItem
       title="Senior System Engineer"
-      date="Maj 2018 - December 2019"
+      from={new Date(2018, 4)}
+      to={new Date(2019, 11)}
       skills={['C#', 'ASP.NET', 'JavaScript', 'HTML', 'CSS', 'SQL', 'Git', 'Gulp']}
     >
       <P color="text-gray-700 dark:text-gray-300">
@@ -85,7 +88,8 @@
 
     <TimelineItem
       title="System Engineer"
-      date="Oktober 2014 - Maj 2018"
+      from={new Date(2014, 9)}
+      to={new Date(2018, 4)}
       skills={['C#', 'ASP.NET', 'JavaScript', 'HTML', 'CSS', 'SQL']}
     >
       <P color="text-gray-700 dark:text-gray-300">

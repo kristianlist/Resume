@@ -10,6 +10,22 @@
   "Skills": "Kompetence",
   "Skill": "Kompetence",
   "years_experience": "Års erfaring",
-  "asom-net resume": "Et studiejob jeg har vedholdt gennem mine STX og Datamatiker studier. Arbejdet har bestået i at assistere kunder med deres e-mail opsætning, tv samt internet signal. Dette har givet mig mulighed for at lære meget om hvordan almindelige brugere benytter IT og hvordan deres IT kendskab giver dem et andet udgangspunkt når de skal løse opgaver. Her startede også min interesse for servere og netværk.",
-  "about": "Om mig"
+  "asom-net": {
+    "title": "IT Support & Web Developer",
+    "resume": "Et studiejob jeg har vedholdt gennem mine STX og Datamatiker studier. Arbejdet har bestået i at assistere kunder med deres e-mail opsætning, tv samt internet signal. Dette har givet mig mulighed for at lære meget om hvordan almindelige brugere benytter IT og hvordan deres IT kendskab giver dem et andet udgangspunkt når de skal løse opgaver. Her startede også min interesse for servere og netværk."
+  },
+  "about": "Om mig",
+  "language": {
+    "da": "Dansk (Dansk)",
+    "en": "Engelsk (English)",
+    "es": "Spansk (Español)"
+  },
+  "full-stack-developer": "Full Stack udvikler",
+  "about-me": {
+    "part1": "Jeg er en erfaren softwareudvikler der er kendt for en holistisk tilgang til udvikling og min interesse i at tilegne mig ny viden.",
+    "part2": "Med nysgerrighed og en reflekterende tankegang nyder jeg at udforske nye teknologier og metoder for at udvide mit kendskab til software udvikling der er i konstant udvikling.",
+    "part3": "Min erfaring som full stack udvikler gør det muligt for mig at betragte systemer fra alle perspektiver, mens min erfaring inden for webinfrastruktur sikrer robuste og skalerbare løsninger.",
+    "part4": "Jeg er stolt af min evne til at tackle komplekse problemer med en rolig og fokuseret tilgang, og jeg stræber altid efter at levere resultater af høj kvalitet, der opfylder både tekniske og forretningsmæssige krav."
+  },
+  "now": "nu"
 }

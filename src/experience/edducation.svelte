@@ -8,8 +8,13 @@
 
 <TimelineGroup {title}>
   <Timeline>
-    <TimelineItem title="Erhvervsakademi Aarhus - Datamatiker" date="2010 - 2013"></TimelineItem>
+    <TimelineItem
+      title="Erhvervsakademi Aarhus - Datamatiker"
+      from={new Date(2010, 7)}
+      to={new Date(2013, 0)}
+    ></TimelineItem>
 
-    <TimelineItem title="Vejen Gymnasium & HF - STX" date="2006 - 2009"></TimelineItem>
+    <TimelineItem title="Vejen Gymnasium & HF - STX" from={new Date(2006, 7)} to={new Date(2009, 6)}
+    ></TimelineItem>
   </Timeline>
 </TimelineGroup>
