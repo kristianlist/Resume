@@ -1,5 +1,5 @@
 <script lang="ts">
-  import { Heading, P, Span } from 'flowbite-svelte';
+  import { Blockquote, Heading, P, Span } from 'flowbite-svelte';
   import {
     GithubSolid,
     LinkedinSolid,
@@ -12,8 +12,9 @@
   import Golfbox from '../experience/golfbox.svelte';
   import AsomNet from '../experience/asom-net.svelte';
   import Edducation from '../experience/edducation.svelte';
+  import { page } from '$app/stores';
 
-  const external = [
+  $: external = [
     {
       name: 'github',
       url: 'https://github.com/kristianlist',
@@ -40,10 +41,25 @@
       icon: PhoneSolid
     }
   ];
+
+  $: links = [
+    {
+      title: $t('about'),
+      hash: '#about'
+    },
+    {
+      title: $t('experience'),
+      hash: '#experience'
+    },
+    {
+      title: $t('education'),
+      hash: '#education'
+    }
+  ];
 </script>
 
 <div
-  class="mx-auto min-h-screen max-w-screen-xl px-6 py-12 font-sans md:px-12 md:py-20 lg:px-24 lg:py-0"
+  class="mx-auto min-h-screen max-w-screen-xl px-6 py-12 font-sans antialiased md:px-12 md:py-20 lg:px-24 lg:py-0"
 >
   <div class="justify-between gap-4 lg:flex">
     <div class="flex flex-col justify-between lg:sticky lg:top-0 lg:h-screen lg:w-1/2 lg:py-24">
@@ -63,9 +79,13 @@
       </div>
       <!-- nav -->
       <div class="hidden flex-col items-center gap-2 lg:flex">
-        <a href="#about" class="line-height-3 hover:text-xl active:text-xl">{$t('about')}</a>
-        <a href="#experience">{$t('experience')}</a>
-        <a href="#education">{$t('education')}</a>
+        {#each links as link}
+          <a
+            href={link.hash}
+            class="text-xl dark:hover:text-secondary-400 [&.active]:text-secondary-300"
+            class:active={$page.url.hash === link.hash}>{link.title}</a
+          >
+        {/each}
       </div>
 
       <!-- social -->
@@ -79,19 +99,21 @@
     </div>
     <div class="flex flex-col lg:w-1/2 lg:py-24">
       <!-- about -->
-      <div id="about" class="mb-24">
-        <P weight="normal" class="mb-2 mt-8">
-          {$t('about-me.part1')}
-        </P>
-        <P weight="normal" class="mb-2">
-          {$t('about-me.part2')}
-        </P>
-        <P weight="normal" class="mb-2">
-          {$t('about-me.part3')}
-        </P>
-        <P weight="normal" class="mb-2">
-          {$t('about-me.part4')}
-        </P>
+      <div id="about" class="mb-48 mt-24">
+        <Blockquote italic={false}>
+          <P class="mb-2 mt-8">
+            {$t('about-me.part1')}
+          </P>
+          <P weight="light" class="mb-2">
+            {$t('about-me.part2')}
+          </P>
+          <P weight="light" class="mb-2">
+            {$t('about-me.part3')}
+          </P>
+          <P weight="light" class="mb-2">
+            {$t('about-me.part4')}
+          </P>
+        </Blockquote>
       </div>
 
       <!-- experience -->
@@ -115,5 +137,12 @@
     box-shadow: 0 0 calc(var(--shadowLength) * 2) silver;
     filter: drop-shadow(var(--shadowLengthMinus) 0 0.5em hsla(180, 100%, 50%, 0.4))
       drop-shadow(var(--shadowLength) 0 0.5em hsla(60, 100%, 50%, 0.4));
+  }
+  a.active::before {
+    content: '< ';
+  }
+
+  a.active::after {
+    content: ' >';
   }
 </style>

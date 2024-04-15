@@ -1,9 +1,9 @@
 ## Remaining tasks
 
 - [x] Add language picker
-- [ ] Wrap all text in translation
+- [x] Wrap all text in translation
 - [ ] Translate everything into english, maybe more languages
-- [ ] Menu in desktop needs some styling
+- [x] Menu in desktop needs some styling
 - [ ] Describe educations
 - [ ] Make light theme pretty
 - [ ] More highlighting in text

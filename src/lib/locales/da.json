@@ -12,7 +12,9 @@
   "years_experience": "Års erfaring",
   "asom-net": {
     "title": "IT Support & Web Developer",
-    "resume": "Et studiejob jeg har vedholdt gennem mine STX og Datamatiker studier. Arbejdet har bestået i at assistere kunder med deres e-mail opsætning, tv samt internet signal. Dette har givet mig mulighed for at lære meget om hvordan almindelige brugere benytter IT og hvordan deres IT kendskab giver dem et andet udgangspunkt når de skal løse opgaver. Her startede også min interesse for servere og netværk."
+    "part1": "Et studiejob jeg har vedholdt gennem mine STX og Datamatiker studier.",
+    "part2": "Arbejdet har bestået i at assistere kunder med deres e-mail opsætning, tv samt internet signal.\nDette har givet mig mulighed for at lære meget om hvordan almindelige brugere benytter IT og hvordan deres IT kendskab giver dem et andet udgangspunkt når de skal løse opgaver.",
+    "part3": "Her startede også min interesse for servere og netværk."
   },
   "about": "Om mig",
   "language": {
@@ -22,10 +24,48 @@
   },
   "full-stack-developer": "Full Stack udvikler",
   "about-me": {
-    "part1": "Jeg er en erfaren softwareudvikler der er kendt for en holistisk tilgang til udvikling og min interesse i at tilegne mig ny viden.",
-    "part2": "Med nysgerrighed og en reflekterende tankegang nyder jeg at udforske nye teknologier og metoder for at udvide mit kendskab til software udvikling der er i konstant udvikling.",
-    "part3": "Min erfaring som full stack udvikler gør det muligt for mig at betragte systemer fra alle perspektiver, mens min erfaring inden for webinfrastruktur sikrer robuste og skalerbare løsninger.",
-    "part4": "Jeg er stolt af min evne til at tackle komplekse problemer med en rolig og fokuseret tilgang, og jeg stræber altid efter at levere resultater af høj kvalitet, der opfylder både tekniske og forretningsmæssige krav."
+    "part1": "Jeg er en erfaren softwareudvikler, der er kendt for en holistisk tilgang til udvikling, og min interesse i at tilegne mig ny viden.",
+    "part2": "Med nysgerrighed og refleksion udforsker jeg nye teknologier, for at udvide mit kendskab til software i konstant udvikling.",
+    "part3": "Min erfaring som full stack udvikler, gør det muligt for mig at betragte systemer fra alle perspektiver, mens min erfaring med webinfrastruktur sikrer robuste og skalerbare løsninger.",
+    "part4": "Jeg har en evne til at tackle komplekse problemer roligt og fokuseret, og jeg tilstræber at levere resultater af høj kvalitet, som opfylder både tekniske og forretningsmæssige krav."
   },
-  "now": "nu"
+  "now": "nu",
+  "golfbox": {
+    "description": "Jeg har i min tid hos GolfBox haft mange forskellige roller, og har  været med til at præge både de teknologiske valg, samt den organisatoriske retning. \n Fra start af har jeg være nysgerrig og interesseret i at lære nyt. Det har gjort at jeg i dag har fået tildelt meget ansvar, og er en aktiv del af udviklingen af alle software løsninger i GolfBox, både interne og eksterne. \n De teknologiske rammer for webudvikling er i dag et helt andet sted, end da jeg startede for næsten 10 år siden. Det er spændende at tage ny landvindinger og udvikle løsninger med teknologi der ikke fandtes tidligere.",
+    "position1": {},
+    "system-engineer": {
+      "title": "System Engineer",
+      "part1": "Jeg begyndte som front-end udvikler på vores ASP.NET WebForms-baserede Tournament produkt, hvor jeg udviklede nye features baseret på custom CSS og JavaScript.\nDen rolle lagde grund for min overgang til et omskrivningsprojekt af ProPlanner, hvor jeg sammen med en anden udvikler benyttede ASP.NET MVC til en komplet omskrivning.\nMed primært fokus på front-end-implementering benyttede jeg CSS, JavaScript og Gulp til at effektivisere udviklingen og lave genbrugelige komponenter.",
+      "part2": "Siden 2016 har jeg været den eneste udvikler og vedligeholder af ProPlanner, hvor jeg bestemmer den tekniske retning og sikrer løbende opdatering af teknologier og understøtter brugerbehov. Selvom min primære rolle har været som udvikler og vedligeholder af ProPlanner, har jeg også udviklet en bred forståelse for webinfrastruktur og driftsaspekter."
+    },
+    "senior-system-engineer": {
+      "title": "Senior System Engineer",
+      "part1": "I denne stilling antog jeg en rolle som senior systemingeniør, hvor jeg fortsætter med de samme opgaver som tidligere, men nu også er involveret i planlægning, mentorering af nye medarbejdere og onboarding-processen.",
+      "part2": "Jeg har i denne periode oplært 2 nye udviklere."
+    },
+    "technical-product-manager": {
+      "title": "Technical Product Manager - ProPlanner",
+      "part1": "Denne stilling er afstedkommet i forbindelse med afgang af den tidligere projectleder, hvilket affødte et behov for et tættere ejerskab af ProPlanner produktet.\nDet har derfor ultimativt været min opgave også at danne visionen for produktet fremadrettet, selvom tiden ikke har været til at implementere dem alle.",
+      "part2": "Efter afgang af tidligere projektleder har jeg også fået ansvar for vores daværende projektstyrings-værktøj Redmine, og stået for at afholde grooming af backlogs."
+    },
+    "head-of-project-management": {
+      "title": "Head of Project Management",
+      "part1": "I min nuværende stilling har jeg det overordnede ansvar for projektstyring, i samarbejde med vores CTO samt Tech leads på de enkelte produkter, hvor jeg selv er Tech lead på ProPlanner produktet.\nI det daglige har jeg stadig de samme opgaver og ansvarsområder som tidligere, men med en lavere kapacitet.\nJeg har i perioden også været med til at afholde interne ansættelsessamtaler for udviklere.",
+      "part2": "En af de første opgaver jeg stod i spidsen for, var et migrationsprojekt fra Redmine til Jira. Et skifte der strømlinede vores projektstyringsprocesser og har sikret overblik for interessenter, og bla. kan udviklere nu følge en sag direkte til dets repositories, hvilket har styrket deres overblik.\nDette initiativ omfattede opsætning af skræddersyede workflows i Jira for at passe med udvikling og releaseprocesser for de enkelte teams.",
+      "part3": "Ved siden af Jira har jeg udviklet et website i Svelte, med det formål at kunne generere leverancedatoer på opgaver til deling med interessenter.\nDette er i dag helt essentielt for GolfBox for at kunne imødekomme behovet om åbenhed fra vores kunder, samt muligheden for at kunne langtidsplanlægge.",
+      "part4": "For nuværende har jeg til opgave at understøtte udviklere hos vores outsourcing-partner, ogløbende sikre at tech stacken er anvendt korrekt, samt at best practices bliver efterlevet.\nSideløbende udvikler jeg et komponent blibliotek i SvelteKit som proof of concept, med intentionom at blive benyttet til al fremtidig udvikling af UI i GolfBox. Når den har en tilfredsstillende funktionsniveau og indhold, vil jeg begynde at planlægge omlægning af de nuværendetech stacks."
+    }
+  },
+  "computer_science": {
+    "title": "Erhvervsakademi Aarhus - Datamatiker",
+    "part1": "På Datamatiker uddannelsen har jeg lært det grundlæggende om softwareudvikling, projektudvikling og processer.",
+    "part2": "Jeg havde i forvejen en del erfaring med HTML, CSS og JavaSript, og uddannelsen har været en god supplement til dette, da der var meget fokus på ASP.NET og generelt serverside udvikling.",
+    "part3": "Foruden kode har jeg lært om databasedesign og systemarkitektur, som har været nødvendige færdigheder for mig ved udvikling af GolfBox ProPlanner, i mit første job efter uddanelsen."
+  },
+  "stx": {
+    "title": "Vejen Gymnasium & HF - STX",
+    "part1": "Ved at tage en almen studentereksamen, er jeg blevet introduceret til forskellige fagområder indefor sprog, kunst, natur og samfundsvidenskab.\n Uddannelsen sikrer almendannelse, og omfatter fag der giver en bred viden om større begreber, og denne viden kan danne grundlag for den videre uddannelse.",
+    "part2": "Jeg har siden brugt alle de færdigheder jeg har lært under uddannelsen, og anvendt dem i både personlige og professionelle sammenhænge. Fra at analysere komplekse tekster til at forstå historiske begivenheder og deltage i debatter om samfundet, har min uddannelse givet mig en solid base at bygge videre på.",
+    "part3": "Alt i alt har den almene studentereksamen rustet mig til at møde de udfordringer, jeg står overfor i livet, og har været afgørende for min personlige og faglige udvikling."
+  }
 }

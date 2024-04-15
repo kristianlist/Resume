@@ -5,8 +5,8 @@
   import { CalendarWeekSolid } from 'flowbite-svelte-icons';
   import { t, date } from 'svelte-i18n';
 
+  export let skills: string[] = [];
   type props = ComponentProps<TimelineItem> & {
-    skills: string[];
     from: Date;
     to: Date | null;
   };
@@ -26,9 +26,9 @@
     </span>
   </svelte:fragment>
   <slot />
-  {#if $$props.skills}
+  {#if skills}
     <div class="mt-2 flex flex-wrap gap-2 text-xs">
-      {#each $$props.skills.sort() as title}
+      {#each skills.sort() as title}
         <Tag {title} />
       {/each}
     </div>
