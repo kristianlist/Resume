@@ -2,11 +2,11 @@
 
 - [x] Add language picker
 - [x] Wrap all text in translation
-- [ ] Translate everything into english, maybe more languages
+- [x] Translate everything into english, maybe more languages
 - [x] Menu in desktop needs some styling
-- [ ] Describe educations
+- [x] Describe educations
 - [ ] Make light theme pretty
-- [ ] More highlighting in text
+- [x] More highlighting in text
 
 ## Developing
 

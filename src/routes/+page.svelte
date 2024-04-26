@@ -8,11 +8,13 @@
     PhoneSolid
   } from 'flowbite-svelte-icons';
 
-  import { t } from 'svelte-i18n';
   import Golfbox from '../experience/golfbox.svelte';
   import AsomNet from '../experience/asom-net.svelte';
   import Edducation from '../experience/edducation.svelte';
   import { page } from '$app/stores';
+  import { getTranslate } from '@tolgee/svelte';
+
+  const { t } = getTranslate();
 
   $: external = [
     {

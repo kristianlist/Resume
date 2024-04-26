@@ -3,7 +3,11 @@
   import type { ComponentProps } from 'svelte';
   import Tag from '../tag.svelte';
   import { CalendarWeekSolid } from 'flowbite-svelte-icons';
-  import { t, date } from 'svelte-i18n';
+  import { getTranslate, getTolgee } from '@tolgee/svelte';
+
+  const { t } = getTranslate();
+  const tolgee = getTolgee(['language']);
+  const dateOptions = { month: 'short', year: 'numeric' };
 
   export let skills: string[] = [];
   type props = ComponentProps<TimelineItem> & {
@@ -11,10 +15,11 @@
     to: Date | null;
   };
 
-  let _date =
-    $date($$props.from, { month: 'short', year: 'numeric' }) +
+  $: language = $tolgee.getLanguage();
+  $: _date =
+    $$props.from.toLocaleString(language, dateOptions) +
     ' - ' +
-    ($$props.to ? $date($$props.to, { month: 'short', year: 'numeric' }) : $t('now'));
+    ($$props.to ? $$props.to.toLocaleString(language, dateOptions) : $t('now'));
 </script>
 
 <TimelineItem classDiv="ring-0" {...$$restProps} classTime="capitalize" date={_date}>

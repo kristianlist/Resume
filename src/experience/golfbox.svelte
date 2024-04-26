@@ -1,7 +1,9 @@
 <script lang="ts">
   import { P } from 'flowbite-svelte';
   import { Timeline, TimelineGroup, TimelineItem } from '../components/timeline';
-  import { t } from 'svelte-i18n';
+  import { getTranslate } from '@tolgee/svelte';
+
+  const { t } = getTranslate();
 
   const title = 'GolfBox A/S';
 </script>
