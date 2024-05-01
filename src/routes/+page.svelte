@@ -12,7 +12,9 @@
   import AsomNet from '../experience/asom-net.svelte';
   import Edducation from '../experience/edducation.svelte';
   import { page } from '$app/stores';
-  import { getTranslate } from '@tolgee/svelte';
+  import { getTranslate, getTolgee } from '@tolgee/svelte';
+
+  const tolgee = getTolgee(['language']);
 
   const { t } = getTranslate();
 
@@ -66,13 +68,18 @@
   <div class="justify-between gap-4 lg:flex">
     <div class="flex flex-col justify-between lg:sticky lg:top-0 lg:h-screen lg:w-1/2 lg:py-24">
       <!-- intro -->
-      <div class="flex flex-col items-center">
+      <div class="-z-10 flex flex-col items-center">
         <!-- image -->
-        <img
-          src="https://media.licdn.com/dms/image/C4D03AQFsL6gP_TsCoQ/profile-displayphoto-shrink_800_800/0/1640008466235?e=1716422400&v=beta&t=Q8DEY1oQ9g1vf9ZJKa1vk6NTc_CCPHmVSwAcMEYemYo"
-          alt="profile"
-          class="-z-10 h-40 w-40 justify-self-center rounded-full object-cover lg:h-60 lg:w-60"
-        />
+        <div class="relative h-40 w-40 justify-self-center lg:h-60 lg:w-60">
+          <img src="profile.jpg" alt="profile" class="profile rounded-full object-cover" />
+
+          <img
+            src="sombrero.png"
+            alt="sombrero"
+            class="absolute top-0 -mt-4 w-fit scale-x-[-1]"
+            class:hidden={$tolgee.getLanguage() !== 'es'}
+          />
+        </div>
 
         <Heading tag="h1" class="w-auto leading-loose">Kristian List</Heading>
         <Heading tag="h4" class="w-auto leading-3">
@@ -93,7 +100,7 @@
       <!-- social -->
       <div class="flex flex-row justify-center gap-2 py-6">
         {#each external as ex}
-          <a href={ex.url}
+          <a href={ex.url} target="_blank"
             ><svelte:component this={ex.icon} class="lg:h-8 lg:w-8" alt={ex.name} /></a
           >
         {/each}
@@ -133,7 +140,7 @@
 </div>
 
 <style>
-  img {
+  img.profile {
     --shadowLength: 1rem;
     --shadowLengthMinus: calc(-1 * var(--shadowLength));
     box-shadow: 0 0 calc(var(--shadowLength) * 2) silver;
