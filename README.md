@@ -1,12 +1,6 @@
-## Remaining tasks
+# Resume
 
-- [x] Add language picker
-- [x] Wrap all text in translation
-- [x] Translate everything into english, maybe more languages
-- [x] Menu in desktop needs some styling
-- [x] Describe educations
-- [ ] Make light theme pretty
-- [x] More highlighting in text
+This is my resume.
 
 ## Developing
 
@@ -18,13 +12,3 @@ npm run dev
 # or start the server and open the app in a new browser tab
 npm run dev -- --open
 ```
-
-## Building
-
-To create a production version of your app:
-
-```bash
-npm run build
-```
-
-You can preview the production build with `npm run preview`.
